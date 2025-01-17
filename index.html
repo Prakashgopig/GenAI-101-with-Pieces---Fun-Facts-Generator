@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Industry Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #fact-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="fact-container">
+        <h1>AI Industry Facts</h1>
+        <button onclick="displayFact()">Show a Random Fact</button>
+        <p id="fact"></p>
+    </div>
+    <script>
+        const facts = [
+            "The AI industry is projected to grow to over $500 billion by 2024, driven by increased adoption across various sectors including healthcare, finance, and automotive.",
+            "AI technologies are applied in numerous fields such as healthcare (for diagnostic assistance and personalized medicine), finance (for fraud detection and robo-advisors), automotive (self-driving cars), and manufacturing (automation and predictive maintenance).",
+            "The backbone of AI includes machine learning, deep learning, natural language processing (NLP), computer vision, and robotics. These technologies enable systems to learn from data, make decisions, and perform tasks that traditionally required human intelligence.",
+            "As AI technology advances, ethical issues such as data privacy, bias in AI algorithms, and the potential for job displacement are increasingly coming under scrutiny.",
+            "AI is integral in consumer electronics, enhancing user experiences through voice assistants like Siri and Alexa, recommendation systems in streaming services, and personalized features in smartphones.",
+            "The development of AI-specific chips and processors, such as GPUs and TPUs, has significantly improved the efficiency and capabilities of AI systems.",
+            "AI is being used to address social and environmental challenges, from predicting climate patterns and optimizing energy use to aiding in disaster response and improving healthcare outcomes.",
+            "Countries around the world, notably the United States, China, and members of the European Union, are investing heavily in AI technology, recognizing its strategic importance in gaining economic and military advantages.",
+            "Governments are increasingly focusing on regulating AI technologies to ensure safety, security, and ethical usage. This includes guidelines on autonomous vehicles, facial recognition technologies, and other AI-driven systems.",
+            "AI is transforming the workplace, automating routine tasks, and requiring new skills from the workforce. There is a growing need for AI literacy and skills training to prepare workers for the future."
+        ];
+
+        function displayFact() {
+            const fact = facts[Math.floor(Math.random() * facts.length)];
+            document.getElementById('fact').textContent = fact;
+        }
+    </script>
+</body>
+</html>
